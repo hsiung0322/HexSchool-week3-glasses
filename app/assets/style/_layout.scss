@@ -1,0 +1,66 @@
+.header{
+    background-color: $bg-primary;
+    .logo{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        a{
+            display: block;
+            width: 80px;
+            height: 49px;
+            background: url(../images/logo.png) no-repeat;
+            text-indent: 101%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    .menu-item{
+        margin-left: 4rem;
+        font-size: 1.25rem;
+    }
+}
+.menu-item a{
+    color: $text-light;
+    &:hover{
+        border-bottom: 3px solid $text-light;
+    }
+}
+.footer{
+    background-color: $bg-primary;
+    .menu-item{
+        margin-right: 3rem;
+    }
+    .social-list-item{
+        margin-left: 2rem;
+    }
+    .contact-list{
+        border-bottom: 1px solid $border-light;
+    }
+    .contact-list-item{
+        margin-bottom: 1rem;
+        color: $text-light;
+        i{
+            font-size: 2.5rem;
+            margin-right: 1.25rem;
+        }
+        a{
+            color: $text-light;
+            font-size: 2.25rem;
+            &:hover{
+                color: $list-active;
+            }
+        }
+    }
+}
+.copyright{
+    color: $text-light;
+    &-list-item{
+        margin-left: 3rem;
+        a{
+            color: $text-light;
+            font-size: 14px;
+            &:hover{
+                color: $list-active;
+            }
+        }
+    }
+}
