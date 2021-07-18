@@ -1,0 +1,357 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+/* 全域 border-box */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: "Roboto", "Noto Sans TC","-apple-system", "BlinkMacSystemFont", "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", "Arial", "sans-serif"; }
+
+body {
+  line-height: 1.5; }
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto; }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.m0-a {
+  margin: 0 auto; }
+
+.mb-3 {
+  margin-bottom: 1.5rem; }
+
+.mb-4 {
+  margin-bottom: 2rem; }
+
+.mb-5 {
+  margin-bottom: 2.5rem; }
+
+.mb-6 {
+  margin-bottom: 3rem; }
+
+.pt-4 {
+  padding-top: 2rem; }
+
+.pb-5 {
+  padding-bottom: 2.5em; }
+
+.pl-11 {
+  padding-left: 5.5rem; }
+
+.pr-11 {
+  padding-right: 5.5rem; }
+
+.header {
+  background-color: #AA0601; }
+  .header .logo {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .header .logo a {
+      display: block;
+      width: 80px;
+      height: 49px;
+      background: url(../images/logo.png) no-repeat;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap; }
+  .header .menu-item {
+    margin-left: 4rem;
+    font-size: 1.25rem; }
+
+.menu-item a {
+  color: #fff; }
+  .menu-item a:hover {
+    border-bottom: 3px solid #fff; }
+
+.footer {
+  background-color: #AA0601; }
+  .footer .menu-item {
+    margin-right: 3rem; }
+  .footer .social-list-item {
+    margin-left: 2rem; }
+  .footer .contact-list {
+    border-bottom: 1px solid #fff; }
+  .footer .contact-list-item {
+    margin-bottom: 1rem;
+    color: #fff; }
+    .footer .contact-list-item i {
+      font-size: 2.5rem;
+      margin-right: 1.25rem; }
+    .footer .contact-list-item a {
+      color: #fff;
+      font-size: 2.25rem; }
+      .footer .contact-list-item a:hover {
+        color: blue; }
+
+.copyright {
+  color: #fff; }
+  .copyright-list-item {
+    margin-left: 3rem; }
+    .copyright-list-item a {
+      color: #fff;
+      font-size: 14px; }
+      .copyright-list-item a:hover {
+        color: blue; }
+
+.wrap {
+  color: #650300; }
+
+section {
+  padding-top: 60px;
+  padding-bottom: 80px; }
+
+.banner {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png") center;
+  height: 840px;
+  padding: 350px 0; }
+
+.slogan {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: right; }
+  .slogan span {
+    display: block;
+    font-size: 2.25rem;
+    font-weight: normal; }
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold; }
+
+.service {
+  background: #FBF2F2; }
+  .service-list-item {
+    width: 255px;
+    text-align: center; }
+    .service-list-item i {
+      font-size: 6rem;
+      margin-bottom: 1.5rem; }
+    .service-list-item h3 {
+      font-size: 1.5rem;
+      font-weight: bold; }
+    .service-list-item p {
+      color: #000;
+      text-align: left; }
+
+.classic-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .classic-list-item img {
+    width: 635px;
+    height: 320px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-right: 2rem; }
+  .classic-list-item .item-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 3rem;
+    color: #AA0601; }
+    .classic-list-item .item-name i {
+      font-size: 44px;
+      margin-right: 10px; }
+    .classic-list-item .item-name h3 {
+      font-weight: bold;
+      font-style: italic; }
+  .classic-list-item:nth-child(2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+    .classic-list-item:nth-child(2) img {
+      margin-right: 0;
+      margin-left: 2rem; }
+
+.coBranding {
+  background: url("https://hexschool.github.io/webLayoutTraining1st/week3/bg.png") center;
+  height: 705px;
+  position: relative;
+  z-index: -3; }
+  .coBranding .title {
+    color: #fff; }
+  .coBranding .item {
+    width: 540px;
+    height: 455px;
+    position: relative;
+    z-index: -2; }
+    .coBranding .item h3 {
+      color: #AA0601;
+      font-size: 4.5rem;
+      z-index: 1; }
+    .coBranding .item:nth-child(1) {
+      background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png");
+      background-size: cover;
+      background-position: center; }
+    .coBranding .item:nth-child(2) {
+      background: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png");
+      background-size: cover;
+      background-position: center; }
+    .coBranding .item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: -1; }
+
+.customer-list-item {
+  width: 255px;
+  border-radius: 4px;
+  border: 1px solid #DEE2E6;
+  -webkit-box-shadow: 0px 2px 6px #00000029;
+          box-shadow: 0px 2px 6px #00000029; }
+  .customer-list-item .photo {
+    height: 256px; }
+  .customer-list-item-infos {
+    height: 204px;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .customer-list-item-infos .date {
+      font-size: 14px;
+      color: #707070; }
+  .customer-list-item-content {
+    color: #212529; }
+    .customer-list-item-content h3 {
+      font-size: 14px;
+      margin-bottom: 0.5rem; }
+
+.contact {
+  background: #FBF2F2;
+  color: #000; }
+  .contact .container {
+    width: 730px; }
+  .contact .description {
+    margin-bottom: 20px;
+    font-size: 1.25rem; }
+  .contact .input-item {
+    margin-bottom: 1rem; }
+    .contact .input-item label {
+      display: block; }
+    .contact .input-item input {
+      width: 100%;
+      height: 50px;
+      padding: 1rem; }
+  .contact .textarea-item {
+    margin-bottom: 1rem; }
+    .contact .textarea-item label {
+      display: block; }
+    .contact .textarea-item textarea {
+      width: 100%;
+      height: 136px;
+      padding: .75rem 1rem; }
+  .contact .submit-btn {
+    width: 350px;
+    background: #AA0601;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    cursor: pointer; }
+    .contact .submit-btn:hover {
+      background: #650300; }
+
+/*# sourceMappingURL=all.css.map */
