@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="header d-flex justify-content-between align-items-center pr-11 pl-11">
+  <header class="header">
     <h1 class="logo">
       <a href="#">logo</a>
     </h1>
@@ -145,40 +145,44 @@
       </ul>
     </div>
   </section>
-  <section class="contact">
+  <section class="contactUs">
     <div class="container">
       <h2 class="title mb-3">聯絡我們</h2>
       <p class="description">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-      <ul class="input-list">
-        <li class="input-item">
-          <label for="name">姓名</label>
-          <input id="name" type="text" placeholder="陳小明">
-        </li>
-        <li class="input-item">
-          <label for="tel">聯絡電話</label>
-          <input id="tel" type="tel" placeholder="0912-345-678">
-        </li>
-        <li class="input-item">
-          <label for="email">電子郵件</label>
-          <input id="email" type="email" placeholder="example@email.com">
-        </li>
-        <li class="textarea-item">
-          <label for="opinion">意見反應</label>
-          <textarea id="opinion" placeholder="請輸入您的意見"></textarea>
-        </li>
-        <li class="mb-5">
-          <input id="accept" type="checkbox">
-          <label for="accept">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
-        </li>
-      </ul>
-      <div class="submit-btn m0-a">確認送出</div>
+      <form>
+        <ul class="input-list">
+          <li class="input-item">
+            <label for="name">姓名</label>
+            <input id="name" type="text" placeholder="陳小明">
+          </li>
+          <li class="input-item">
+            <label for="tel">聯絡電話</label>
+            <input id="tel" type="tel" placeholder="0912-345-678">
+          </li>
+          <li class="input-item">
+            <label for="email">電子郵件</label>
+            <input id="email" type="email" placeholder="example@email.com">
+          </li>
+          <li class="textarea-item">
+            <label for="opinion">意見反應</label>
+            <textarea id="opinion" placeholder="請輸入您的意見"></textarea>
+          </li>
+          <li class="mb-5">
+            <input id="accept" type="checkbox">
+            <label for="accept">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+          </li>
+          <li class="text-center">
+            <input type="submit" class="submit-btn" value="確認送出">
+          </li>
+        </ul>
+      </form>
     </div>
   </section>
 </div>
 
-  <footer class="footer pt-4 pb-5">
+  <footer class="footer">
     <div class="container">
-      <div class="links d-flex justify-content-between align-items-center mb-3">
+      <div class="links d-flex">
         <ul class="menu d-flex">
           <li class="menu-item"><a href="#">首頁</a></li>
           <li class="menu-item"><a href="#">系列鏡框</a></li>
@@ -186,13 +190,23 @@
           <li class="menu-item"><a href="#">部落格</a></li>
           <li class="menu-item"><a href="#">常見問題</a></li>
         </ul>
+        <ul class="contact-list-sm">
+          <li class="contact-list-item d-flex align-items-center">
+            <i class="material-icons-outlined">phone</i>
+            <a href="tel:0800-000-000">0800-000-000</a>
+          </li>
+          <li class="contact-list-item">
+            <i class="material-icons-outlined">email</i>
+            <a href="mailto:glasses@business.com">glasses@business.com</a>
+          </li>
+        </ul>
         <ul class="social-list d-flex">
           <li class="social-list-item"><a href="#"><img src="./assets/images/icon-fb.svg" alt="icon-fb"></a></li>
           <li class="social-list-item"><a href="#"><img src="./assets/images/icon-ig.svg" alt="icon-ig"></a></li>
           <li class="social-list-item"><a href="#"><img src="./assets/images/icon-line.svg" alt="icon-line"></a></li>
         </ul>
       </div>
-      <ul class="contact-list mb-4">
+      <ul class="contact-list-l mb-4">
         <li class="contact-list-item d-flex align-items-center">
           <i class="material-icons-outlined">phone</i>
           <a href="tel:0800-000-000">0800-000-000</a>
@@ -202,7 +216,7 @@
           <a href="mailto:glasses@business.com">glasses@business.com</a>
         </li>
       </ul>
-      <div class="copyright d-flex justify-content-between align-items-center">
+      <div class="copyright">
         <p>Copyright © 2020 Glasses.All rights reserved.</p>
         <ul class="copyright-list d-flex">
           <li class="copyright-list-item"><a href="#">隱私權政策</a></li>
