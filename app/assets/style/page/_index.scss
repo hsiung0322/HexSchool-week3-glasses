@@ -138,14 +138,14 @@ section{
         }
     }
     &-content{
-        color: $text-l-dark;
+        color: $text-customer-content;
         h3{
             font-size: 14px;
             margin-bottom: 0.5rem;
         }
     }
 }
-.contact{
+.contactUs{
     background: $bg-secondary;
     color: $text-dark;
     .container{
@@ -185,7 +185,7 @@ section{
         padding: 1rem 0;
         cursor: pointer;
         &:hover{
-            background: $btn-active
+            background: $btn-hover-color
         }
     }
 }

@@ -1,65 +1,201 @@
 .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5.5rem;
     background-color: $bg-primary;
+    @include pad{
+        padding: 0 2.5rem;
+    }
+    @include iPhone{
+        padding: 0;
+        flex-direction: column;
+    }
     .logo{
         margin-top: 30px;
         margin-bottom: 30px;
+        @include iPhone{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
         a{
             display: block;
-            width: 80px;
-            height: 49px;
             background: url(../images/logo.png) no-repeat;
+            @include size(80px, 49px);
             text-indent: 101%;
             overflow: hidden;
             white-space: nowrap;
+            @include iPhone{
+                background: url(../images/logo-sm.png) no-repeat;
+                @include size(48px, 30px);
+            }
+        }
+    }
+    .menu{
+        @include iPhone{
+            width: 100%;
+            flex-wrap: wrap;
         }
     }
     .menu-item{
         margin-left: 4rem;
         font-size: 1.25rem;
+        @include pad{
+            margin-left: 2.5rem;
+        }
+        @include iPhone{
+            margin: 0;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            width: 50%;
+            text-align: center;
+            border-top: 1px solid $border-color;
+        }
     }
+    .menu-item:nth-child(1), .menu-item:nth-child(3){
+        @include iPhone{
+            border-right: 1px solid $border-color;
+        }
+    } 
 }
+
 .menu-item a{
     color: $text-light;
     &:hover{
-        border-bottom: 3px solid $text-light;
+        border-bottom: 3px solid $list-hover-color;
+    }
+    @include iPhone{
+        &:hover{
+            border-bottom: none;
+            color: $link-hover-color;
+        }
     }
 }
 .footer{
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
     background-color: $bg-primary;
+    @include pad{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 2rem;
+    }
+    @include iPhone{
+        padding: 1.5rem 1rem;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        @include iPhone{
+            align-items: flex-start;
+            border-bottom: 1px solid $border-color;
+            margin-bottom: 1rem;
+        }
+    }
+    .menu{
+        @include iPhone{
+            display: none;
+        }
+    }
     .menu-item{
         margin-right: 3rem;
+        @include pad{
+            margin-right: 2.5rem;
+        }
     }
     .social-list-item{
         margin-left: 2rem;
+        @include pad{
+            margin-left: 1.5rem;
+            img{
+                @include size(24px, 24px);
+            }
+        }
     }
-    .contact-list{
-        border-bottom: 1px solid $border-light;
+    .contact-list-sm{
+        display: none;
+        @include iPhone{
+            display: block;
+            padding-bottom: 0.5rem;
+        }
+    }
+    .contact-list-l{
+        border-bottom: 1px solid $border-color;
+        @include iPhone{
+            display: none;
+        }
     }
     .contact-list-item{
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         color: $text-light;
+        @include pad{
+            margin-bottom: 1rem;
+        }
+        @include iPhone{
+            margin-bottom: .75rem;
+        }
         i{
             font-size: 2.5rem;
             margin-right: 1.25rem;
+            @include pad{
+                font-size: 1.25rem;
+                margin-right: .625rem;
+            }
+            @include iPhone{
+                font-size: 1rem;
+                margin-right: .4rem;
+            }
         }
         a{
             color: $text-light;
             font-size: 2.25rem;
             &:hover{
-                color: $list-active;
+                color: $link-hover-color;
+            }
+            @include pad{
+                font-size: 1.25rem;
+            }
+            @include iPhone{
+                font-size: 1rem;
             }
         }
     }
 }
 .copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: $text-light;
+    @include iPhone{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: .875rem;
+        p{
+            margin-bottom: 0.5rem;
+        }
+    }
+    .copyright-list{
+        @include pad{
+            flex-direction: column;
+        }
+    }
     &-list-item{
         margin-left: 3rem;
+        @include pad{
+            margin-left: 1.5rem;
+        }
+        @include iPhone{
+            margin-left: 0;
+            margin-bottom: 0.5rem;
+        }
         a{
             color: $text-light;
-            font-size: 14px;
+            font-size: .875rem;
             &:hover{
-                color: $list-active;
+                color: $link-hover-color;
             }
         }
     }

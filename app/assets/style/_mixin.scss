@@ -1,0 +1,16 @@
+@mixin size($w,$h){
+    width: $w;
+    height: $h;
+}
+
+@mixin pad() {
+    @media (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin iPhone() {
+    @media (max-width: 375px){
+        @content
+    }
+}
