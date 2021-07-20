@@ -1,15 +1,35 @@
-.wrap{
+.main{
     color: $text-primary;
 }
 section{
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 3.75rem;
+    padding-bottom: 5rem;
+    @include pad{
+        padding-top: 2.5rem;
+        padding-bottom: 3.5rem;
+    }
+    @include iPhone{
+        padding-top: 2rem;
+        padding-bottom: 2.5rem;
+    }
 }
 .banner{
     // background: url(../../images/banner.png) center;
-    background: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png") center;
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 840px;
-    padding: 350px 0;
+    @include iPhone{
+        background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png");
+        height: 394px;
+    }
+    .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }
 .slogan{
     font-size: 4rem;
@@ -20,24 +40,69 @@ section{
         font-size: 2.25rem;
         font-weight: normal;
     }
+    @include pad{
+        font-size: 3rem;
+        span{
+            font-size: 1.25rem;
+        }
+    }
+    @include iPhone{
+        font-size: 2rem;
+        span{
+            font-size: 1rem;
+        }
+    }
 }
 .title{
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
+    @include pad{
+        font-size: 2rem;
+    }
+    @include iPhone{
+        font-size: 1.25rem;
+    }
 }
 .service{
     background: $bg-secondary;
-    &-list-item{
+    @include pad{
+        padding-bottom: 1.5rem;
+    }
+    @include iPhone{
+        padding-bottom: .5rem;
+    }
+    .title{
+        margin-bottom: 3rem;
+        @include pad{
+            margin-bottom: 2.5rem;
+        }
+        @include iPhone{
+            margin-bottom: 1.25rem;
+        }
+    }
+    .service-list{
+        display: flex;
+        justify-content: space-between;
+        @include pad{
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    &-item{
         width: 255px;
         text-align: center;
+        @include pad{
+            margin-bottom: 2rem;
+        }
         i{
-            font-size: 6rem;
-            margin-bottom: 1.5rem;
+            font-size: 6.25rem;
+            margin-bottom: 1rem;
         }
         h3{
             font-size: 1.5rem;
             font-weight: bold;
+            margin-bottom: 0.5rem;
         }
         p{
             color: $text-dark;
@@ -45,22 +110,56 @@ section{
         }
     }
 }
-.classic-list-item{
+.classic {
+    padding-bottom: 3rem;
+    @include iPhone{
+        padding-bottom: 2rem;
+    }
+    .title{
+        margin-bottom: 2.5em;
+        @include pad{
+            margin-bottom: 2rem;
+        }
+        @include iPhone{
+            margin-bottom: 1.25rem;
+        }
+    }
+}
+.classic-item{
     display: flex;
-    img{
-        width: 635px;
-        height: 320px;
-        object-fit: cover;
+    margin-bottom: 2rem;
+    position: relative;
+    @include pad{
+        margin-bottom: .5rem;
+    }
+    .item-picture{
+        width: 57%;
         margin-right: 2rem;
+        @include iPhone{
+            width: 100%;
+            margin: 0;
+        }
     }
     .item-name{
         display: flex;
         align-items: center;
         font-size: 3rem;
         color: $text-secondary;
+        @include pad{
+            font-size: 1.75rem;
+        }
+        @include iPhone{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
         i{
-            font-size: 44px;
-            margin-right: 10px;
+            font-size: 2.75rem;
+            margin-right: .625rem;
+            @include pad{
+                font-size: 2.25rem;
+            }
         }
         h3{
             font-weight: bold;
@@ -73,57 +172,107 @@ section{
             margin-right: 0;
             margin-left: 2rem;
         }
+        @include pad{
+            flex-direction: row;
+            img{
+                margin-left: 0;
+                margin-right: 2rem;
+            }
+        }
+        @include iPhone {
+            img{
+                margin-right: 0;
+            }
+        }
     }
 }
 .coBranding{
     // background: url(../../images/bg.png) center;
-    background: url("https://hexschool.github.io/webLayoutTraining1st/week3/bg.png") center;
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 705px;
-    position: relative;
-    z-index: -3;
+    @include pad{
+        height: 452px;
+        background-size: cover;
+    }
+    @include iPhone{
+        height: 719px;
+    }
     .title{
         color: $text-light;
+        margin-bottom: 2.5rem;
+        @include pad{
+            margin-bottom: 2rem;
+        }
+        @include iPhone{
+            margin-bottom: 1.25rem;
+        }
+    }
+    .coBranding-list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .item{
-        width: 540px;
-        height: 455px;
+        width: 48.6%;
         position: relative;
-        z-index: -2;
-        h3{        
+        background-color: #fff;
+        @include iPhone{
+            width: 100%;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+        &-picture{
+            opacity: .5;
+        }
+        &-title{
             color: $text-secondary;
             font-size: 4.5rem;
-            z-index: 1;
-        }
-        &:nth-child(1){
-            // background-image: url(../../images/product-8.png);
-            background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png");
-            background-size: cover;
-            background-position: center;
-        }
-        &:nth-child(2){
-            // background-image: url(/app/assets/images/product-9.png);
-            background: url("https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png");
-            background-size: cover;
-            background-position: center;
-        }
-        &::before{
-            content: "";
+            width: 100%;
+            text-align: center;
             position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(#fff, 0.5);
-            z-index: -1;
+            top: 50%;
+            transform: translateY(-50%);
+            @include pad{
+                font-size: 2rem;
+            }
         }
     }
 }
-.customer-list-item{
-    width: 255px;
+.customer{
+    @include pad{
+        padding-bottom: 1.5rem;
+    }
+    .title{
+        margin-bottom: 2.5rem;
+        @include pad{
+            margin-bottom: 2rem;
+        }
+    }
+}
+.customer-list{
+    display: flex;
+    justify-content: space-between;
+    @include pad{
+        flex-wrap: wrap;
+    }
+}
+.customer-item{
+    width: 23%;
     border-radius: 4px;
     border: 1px solid #DEE2E6;
     box-shadow: 0px 2px 6px #00000029;
+    @include pad{
+        width: 47.8%;
+        margin-bottom: 2rem;
+    }
+    @include iPhone{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
     .photo{
+        width: 100%;
         height: 256px;
     }
     &-infos{
@@ -133,14 +282,17 @@ section{
         flex-direction: column;
         justify-content: space-between;
         .date{
-            font-size: 14px;
+            font-size: .875rem;
             color: $text-date;
+        }
+        @include pad{
+            padding: 1rem 1.5rem;
         }
     }
     &-content{
         color: $text-customer-content;
         h3{
-            font-size: 14px;
+            font-size: .875rem;
             margin-bottom: 0.5rem;
         }
     }
@@ -149,14 +301,35 @@ section{
     background: $bg-secondary;
     color: $text-dark;
     .container{
-        width: 730px;
+        max-width: 760px;
+        @include pad{
+            max-width: 480px;
+        }
+    }
+    .title{
+        margin-bottom: 1.5rem;
     }
     .description{
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
         font-size: 1.25rem;
+        @include pad{
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        @include iPhone{
+            margin-bottom: .5rem;
+        }
+    }
+    .input-list{
+        @include pad{
+            font-size: 0.875em;
+        }
     }
     .input-item{
         margin-bottom: 1rem;
+        @include pad{
+            margin-bottom: .5rem;
+        }
         label{
             display: block;
         }
@@ -164,10 +337,17 @@ section{
             width: 100%;
             height: 50px;
             padding: 1rem;
+            @include pad{
+                height: 36px;
+                padding: .5rem .75rem;
+            }
         }
     }
     .textarea-item{
         margin-bottom: 1rem;
+        @include pad{
+            margin-bottom: .5rem;
+        }
         label{
             display: block;
         }
@@ -175,10 +355,29 @@ section{
             width: 100%;
             height: 136px;
             padding: .75rem 1rem;
+            @include pad{
+                height: 100px;
+                padding: .5rem .75rem;
+            }
+        }
+    }
+    .checkbox-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.5rem;
+        @include pad{
+            margin-bottom: 1.25rem;
+            align-items: flex-start
+        }
+        input{
+            @include size(24px, 24px);
+            @include pad{
+                @include size(18px, 18px);
+            }
         }
     }
     .submit-btn{
-        width: 350px;
+        width: 47%;
         background: $bg-primary;
         color: $text-light;
         text-align: center;

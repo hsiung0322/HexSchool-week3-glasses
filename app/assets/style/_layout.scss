@@ -76,12 +76,10 @@
     padding-bottom: 2.5rem;
     background-color: $bg-primary;
     @include pad{
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
         padding-bottom: 2rem;
     }
     @include iPhone{
-        padding: 1.5rem 1rem;
+        padding: 1.5rem 0;
     }
     .links{
         display: flex;
@@ -105,7 +103,7 @@
             margin-right: 2.5rem;
         }
     }
-    .social-list-item{
+    .social-item{
         margin-left: 2rem;
         @include pad{
             margin-left: 1.5rem;
@@ -127,9 +125,11 @@
             display: none;
         }
     }
-    .contact-list-item{
+    .contact-item{
         margin-bottom: 1.5rem;
         color: $text-light;
+        display: flex;
+        align-items: center;
         @include pad{
             margin-bottom: 1rem;
         }
@@ -182,7 +182,7 @@
             flex-direction: column;
         }
     }
-    &-list-item{
+    &-item{
         margin-left: 3rem;
         @include pad{
             margin-left: 1.5rem;
