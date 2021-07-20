@@ -74,7 +74,7 @@ body {
   @media (max-width: 768px) {
     .container {
       max-width: 720px; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .container {
       max-width: 375px; } }
 
@@ -128,7 +128,7 @@ body {
   @media (max-width: 768px) {
     .header {
       padding: 0 2.5rem; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .header {
       padding: 0;
       -webkit-box-orient: vertical;
@@ -138,7 +138,7 @@ body {
   .header .logo {
     margin-top: 30px;
     margin-bottom: 30px; }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .header .logo {
         margin-top: 10px;
         margin-bottom: 10px; } }
@@ -150,12 +150,12 @@ body {
       text-indent: 101%;
       overflow: hidden;
       white-space: nowrap; }
-      @media (max-width: 375px) {
+      @media (max-width: 414px) {
         .header .logo a {
           background: url(../images/logo-sm.png) no-repeat;
           width: 48px;
           height: 30px; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .header .menu {
       width: 100%;
       -ms-flex-wrap: wrap;
@@ -166,7 +166,7 @@ body {
     @media (max-width: 768px) {
       .header .menu-item {
         margin-left: 2.5rem; } }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .header .menu-item {
         margin: 0;
         padding-top: 0.5rem;
@@ -174,7 +174,7 @@ body {
         width: 50%;
         text-align: center;
         border-top: 1px solid #fff; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .header .menu-item:nth-child(1), .header .menu-item:nth-child(3) {
       border-right: 1px solid #fff; } }
 
@@ -182,7 +182,7 @@ body {
   color: #fff; }
   .menu-item a:hover {
     border-bottom: 3px solid #fff; }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .menu-item a:hover {
       border-bottom: none;
       color: blue; } }
@@ -194,7 +194,7 @@ body {
   @media (max-width: 768px) {
     .footer {
       padding-bottom: 2rem; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .footer {
       padding: 1.5rem 0; } }
   .footer .links {
@@ -208,14 +208,14 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 1.5rem; }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .footer .links {
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: flex-start;
         border-bottom: 1px solid #fff;
         margin-bottom: 1rem; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .footer .menu {
       display: none; } }
   .footer .menu-item {
@@ -233,13 +233,13 @@ body {
           height: 24px; } }
   .footer .contact-list-sm {
     display: none; }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .footer .contact-list-sm {
         display: block;
         padding-bottom: 0.5rem; } }
   .footer .contact-list-l {
     border-bottom: 1px solid #fff; }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .footer .contact-list-l {
         display: none; } }
   .footer .contact-item {
@@ -254,7 +254,7 @@ body {
     @media (max-width: 768px) {
       .footer .contact-item {
         margin-bottom: 1rem; } }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .footer .contact-item {
         margin-bottom: .75rem; } }
     .footer .contact-item i {
@@ -264,7 +264,7 @@ body {
         .footer .contact-item i {
           font-size: 1.25rem;
           margin-right: .625rem; } }
-      @media (max-width: 375px) {
+      @media (max-width: 414px) {
         .footer .contact-item i {
           font-size: 1rem;
           margin-right: .4rem; } }
@@ -276,7 +276,7 @@ body {
       @media (max-width: 768px) {
         .footer .contact-item a {
           font-size: 1.25rem; } }
-      @media (max-width: 375px) {
+      @media (max-width: 414px) {
         .footer .contact-item a {
           font-size: 1rem; } }
 
@@ -291,7 +291,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #fff; }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .copyright {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -317,7 +317,7 @@ body {
     @media (max-width: 768px) {
       .copyright-item {
         margin-left: 1.5rem; } }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .copyright-item {
         margin-left: 0;
         margin-bottom: 0.5rem; } }
@@ -337,7 +337,7 @@ section {
     section {
       padding-top: 2.5rem;
       padding-bottom: 3.5rem; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     section {
       padding-top: 2rem;
       padding-bottom: 2.5rem; } }
@@ -348,7 +348,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   height: 840px; }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .banner {
       background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png");
       height: 394px; } }
@@ -377,7 +377,7 @@ section {
       font-size: 3rem; }
       .slogan span {
         font-size: 1.25rem; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .slogan {
       font-size: 2rem; }
       .slogan span {
@@ -390,7 +390,7 @@ section {
   @media (max-width: 768px) {
     .title {
       font-size: 2rem; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .title {
       font-size: 1.25rem; } }
 
@@ -399,7 +399,7 @@ section {
   @media (max-width: 768px) {
     .service {
       padding-bottom: 1.5rem; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .service {
       padding-bottom: .5rem; } }
   .service .title {
@@ -407,7 +407,7 @@ section {
     @media (max-width: 768px) {
       .service .title {
         margin-bottom: 2.5rem; } }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .service .title {
         margin-bottom: 1.25rem; } }
   .service .service-list {
@@ -442,7 +442,7 @@ section {
 
 .classic {
   padding-bottom: 3rem; }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .classic {
       padding-bottom: 2rem; } }
   .classic .title {
@@ -450,7 +450,7 @@ section {
     @media (max-width: 768px) {
       .classic .title {
         margin-bottom: 2rem; } }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .classic .title {
         margin-bottom: 1.25rem; } }
 
@@ -466,7 +466,7 @@ section {
   .classic-item .item-picture {
     width: 57%;
     margin-right: 2rem; }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .classic-item .item-picture {
         width: 100%;
         margin: 0; } }
@@ -482,7 +482,7 @@ section {
     @media (max-width: 768px) {
       .classic-item .item-name {
         font-size: 1.75rem; } }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .classic-item .item-name {
         position: absolute;
         top: 50%;
@@ -516,7 +516,7 @@ section {
         .classic-item:nth-child(2) img {
           margin-left: 0;
           margin-right: 2rem; } }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .classic-item:nth-child(2) img {
         margin-right: 0; } }
 
@@ -529,7 +529,7 @@ section {
     .coBranding {
       height: 452px;
       background-size: cover; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .coBranding {
       height: 719px; } }
   .coBranding .title {
@@ -538,7 +538,7 @@ section {
     @media (max-width: 768px) {
       .coBranding .title {
         margin-bottom: 2rem; } }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .coBranding .title {
         margin-bottom: 1.25rem; } }
   .coBranding .coBranding-list {
@@ -554,7 +554,7 @@ section {
     width: 48.6%;
     position: relative;
     background-color: #fff; }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .coBranding .item {
         width: 100%;
         -o-object-fit: contain;
@@ -608,7 +608,7 @@ section {
     .customer-item {
       width: 47.8%;
       margin-bottom: 2rem; } }
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     .customer-item {
       width: 100%;
       margin-bottom: 1rem; } }
@@ -657,7 +657,7 @@ section {
       .contactUs .description {
         margin-bottom: 1rem;
         font-size: 1rem; } }
-    @media (max-width: 375px) {
+    @media (max-width: 414px) {
       .contactUs .description {
         margin-bottom: .5rem; } }
   @media (max-width: 768px) {
