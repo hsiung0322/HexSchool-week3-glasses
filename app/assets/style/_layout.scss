@@ -58,6 +58,19 @@
         }
     } 
 }
+header.fixed { 
+    position: fixed; 
+    width: 100%; 
+    left: 0; 
+    top: 0; 
+    animation: headerAni 0.8s;
+    z-index: 3;
+}
+
+@keyframes headerAni{
+    0% { transform: translateY(-150px); }
+    100% { transform: translateY(0px); }
+}
 
 .menu-item a{
     color: $text-light;
